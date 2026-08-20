@@ -1,0 +1,1 @@
+{"appName":"sample","env":"test","entryType":"HTTP","entryName":"GET /orders/1","sqlId":"com.example.OrderMapper.queryById","sqlCommandType":"SELECT","sqlHash":"sample","costMs":2}
