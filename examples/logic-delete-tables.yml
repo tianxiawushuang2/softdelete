@@ -1,0 +1,21 @@
+tables:
+  - schema: public
+    table: order_main
+    deleteField: delete_flag
+    normalValue: "0"
+    deletedValue: "1"
+    owner: order-team
+  - schema: public
+    table: order_item
+    deleteField: delete_flag
+    normalValue: "0"
+    deletedValue: "1"
+    owner: order-team
+  - schema: public
+    table: customer_info
+    deleteField: delete_flag
+    normalValue: "0"
+    deletedValue: "1"
+scan:
+  mapperPattern: ["**/*.opengauss.xml"]
+  ignorePath: ["**/target/**", "**/build/**", "**/.git/**"]

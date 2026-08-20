@@ -1,0 +1,2 @@
+package com.company.logicdelete.runtime;
+public final class EntryContext {private static final ThreadLocal<Value> LOCAL=new ThreadLocal<>();private EntryContext(){}public static void set(String type,String name,String trace){LOCAL.set(new Value(type,name,trace));}public static Value get(){return LOCAL.get();}public static void clear(){LOCAL.remove();}public static final class Value{public final String type,name,traceId;Value(String t,String n,String x){type=t;name=n;traceId=x;}}}
